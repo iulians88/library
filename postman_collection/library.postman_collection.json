@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "73d95d79-aaf8-4be8-a47d-dc6074ec4adc",
+		"name": "library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save_customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": null,\r\n    \"password\": \"isandu88\",\r\n    \"email\": \"customer_email@yahoo.com\",\r\n    \"fullName\": \"Iulian S.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/saveCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"saveCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 129,\r\n    \"password\": \"isandu\",\r\n    \"email\": \"customer_email@yahoo.com\",\r\n    \"fullName\": \"Iulian Sa.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/saveCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"saveCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/getCustomer/customer_email@yahoo.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"getCustomer",
+						"customer_email@yahoo.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/deleteCustomer/customer_email@yahoo.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"deleteCustomer",
+						"customer_email@yahoo.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\": \"isandu\",\r\n    \"email\": \"customer_email@yahoo.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save_book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJteWp3dCIsInN1YiI6ImN1c3RvbWVyX2VtYWlsQHlhaG9vLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2NDczODI4ODN9.BmRLrAz9yfd7fC4cpqeoL5w0oLPS7AxYHFyLUGnL3HhMQWANOM-0XufSlX2h7qLk0eBM-lu3TCTmPGiYsNB3FQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": null,\r\n    \"title\": \"Shogun\",\r\n    \"author\": \"James Clavell\",\r\n    \"isbn\": \"ISBN-889766\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/books/saveBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						"saveBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJteWp3dCIsInN1YiI6ImN1c3RvbWVyX2VtYWlsQHlhaG9vLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2NDczODI4ODN9.BmRLrAz9yfd7fC4cpqeoL5w0oLPS7AxYHFyLUGnL3HhMQWANOM-0XufSlX2h7qLk0eBM-lu3TCTmPGiYsNB3FQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": null,\r\n    \"title\": \"Shogun\",\r\n    \"author\": \"James Clavell\",\r\n    \"isbn\": \"ISBN-889766\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/books/saveBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						"saveBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_book",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJteWp3dCIsInN1YiI6ImN1c3RvbWVyX2VtYWlsQHlhaG9vLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2NDczODI4ODN9.BmRLrAz9yfd7fC4cpqeoL5w0oLPS7AxYHFyLUGnL3HhMQWANOM-0XufSlX2h7qLk0eBM-lu3TCTmPGiYsNB3FQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/books/getBook/Shogun",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						"getBook",
+						"Shogun"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJteWp3dCIsInN1YiI6ImN1c3RvbWVyX2VtYWlsQHlhaG9vLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2NDczODI4ODN9.BmRLrAz9yfd7fC4cpqeoL5w0oLPS7AxYHFyLUGnL3HhMQWANOM-0XufSlX2h7qLk0eBM-lu3TCTmPGiYsNB3FQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/deleteCustomer/customer_email@yahoo.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"deleteCustomer",
+						"customer_email@yahoo.com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
